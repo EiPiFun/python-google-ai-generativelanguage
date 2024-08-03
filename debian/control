@@ -1,0 +1,38 @@
+Source: python-google-ai-generativelanguage
+Section: python
+Priority: optional
+Maintainer: Home Assistant Team <team+homeassistant@tracker.debian.org>
+Uploaders:
+ DONG XU <me@eipi.fun>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ openstack-pkg-tools,
+ python3-setuptools,
+ python3-all,
+ python3-google-api-core,
+ python3-google-auth,
+ python3-proto-plus,
+ python3-protobuf,
+Build-Depends-Indep:
+ python3-pytest,
+ python3-pytest-asyncio,
+ python3-grpcio,
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/homeassistant-team/deps/python-google-ai-generativelanguage
+Vcs-Git: https://salsa.debian.org/homeassistant-team/deps/python-google-ai-generativelanguage.git
+Homepage: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-ai-generativelanguage
+
+Package: python-google-ai-generativelanguage
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Client for Generative Language API
+ Generative Language API: The Gemini API allows developers to build generative 
+ AI applications using Gemini models. Gemini is our most capable model, built 
+ from the ground up to be multimodal. It can generalize and seamlessly 
+ understand, operate across, and combine different types of information 
+ including language, images, audio, video, and code. You can use the Gemini 
+ API for use cases like reasoning across text and images, content generation, 
+ dialogue agents, summarization and classification systems, and more.
+

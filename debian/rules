@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+UPSTREAM_GIT := https://github.com/googleapis/google-cloud-python/tree/main/packages/google-ai-generativelanguage.git
+include /usr/share/openstack-pkg-tools/pkgos.make
+
+%:
+	dh $@ --buildsystem=pybuild --with python3
+
+
+
